@@ -11,3 +11,4 @@ while palpite != numero_aleatorio:
         palpite = int(input(f"{palpite} é maior do que o número escolhido, tente novamente: "))
 
 print(f"Você acertou!!! {palpite} era o número escolhido!!!! Parabéns!")
+
