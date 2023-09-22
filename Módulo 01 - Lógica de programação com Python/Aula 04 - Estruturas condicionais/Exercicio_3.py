@@ -11,3 +11,4 @@ if num % 2 == 1:
 else:
     print(f"{num} é um número par")
 print("Programa finalizado...")
+
