@@ -10,3 +10,4 @@ valor3 = int(input("Digite o terceiro valor: "))
 resultado = valor1 + valor2 + valor3
 
 print(f"O resultado da soma dos valores {valor1, valor2, valor3} é {resultado}")
+
