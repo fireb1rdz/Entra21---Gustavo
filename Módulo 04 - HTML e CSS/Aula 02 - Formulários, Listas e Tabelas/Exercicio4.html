@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 4</title>
+    <style>
+        table, th, td {
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
     <h1>Tabela</h1>
-    <table border="1">
-        <tr>
-            <thead>
+    <table>
+        <thead>
+            <tr>
                 <th align="center">Tabela</th>
                 <th>Hora da saída</th>
                 <th>Hora da chegada</th>
                 <th>Classe do ônibus</th>
                 <th>Tarifa normal</th>
                 <th>Frequência</th>
-            </thead>
-        </tr>
+            </tr>
+        </thead>
         <tbody>
             <tr>
                 <td>Cidade A</td>
@@ -85,7 +91,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <td >Horários de ônibus</td>
+            <th colspan="6">Horários de ônibus</th>
         </tfoot>
     </table>
 </body>
