@@ -1,0 +1,23 @@
+body {
+    background-image: 
+    linear-gradient(45deg, #0015d6 15%, #7200dd 85%);
+}
+
+.main-header img {
+    margin-top: 20px;
+    display: block;
+}
+.container {
+    padding: 0px 20px;
+}
+
+section {
+    margin: 50px 0px;
+    height: 300px;
+}
+
+main section:first-of-type {
+    /*background-image: url(../img/france.jpg);*/
+    width: 300;
+    height: 400;
+}
