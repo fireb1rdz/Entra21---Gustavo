@@ -1,14 +1,59 @@
-body {
-    background-image: 
-    linear-gradient(45deg, #0015d6 15%, #7200dd 85%);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,600;1,100;1,300;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
-.main-header img {
-    margin-top: 20px;
-    display: block;
+body {
+    background-image: 
+    linear-gradient(45deg, #7200dd 35%, #0015d6a2 65%);
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+}
+
+.main-header img:first-of-type {
+    margin: auto;
+    padding: 15px;
+}
+
+.main-article {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(200, 255, 0, 0.418);
+    width: 300px;
+    height: 200px;
+    border: 0px solid black;
+    margin: 20px 15px;
+    align-self: center;
+    border-radius: 10%;
+
+}
+
+.main-article p:first-of-type {
+    display: inline-block;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
 .container {
     padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
