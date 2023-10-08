@@ -18,7 +18,11 @@ body {
 }
 
 h1 {
-    color: blue;
+    color: rgb(0, 0, 255);
+    text-shadow: 
+    1px 2px 3px black,
+    1px 1px 1em rgb(209, 196, 228),
+    0 0 1.2em rgba(230, 230, 222, 0.522);
     text-align: center;
 }
 
@@ -49,7 +53,14 @@ nav li {
 
 nav a {
     text-decoration: none;
+    padding: 0.5rem;
     color: yellow;
+}
+
+nav a:hover {
+    text-shadow: 
+    0em 0em 1.2em white,
+    0 0 0.5em white;
 }
 
 main {
@@ -100,14 +111,7 @@ section {
     text-align: center;
 }
 
-section div a{
-    text-decoration: none;
-    font-size: 1.1rem;
-    color: black;
-    padding-bottom: 20px;
-}
-
-main section:first-of-type div {
+section:first-of-type div {
     display: flex;
     flex-direction: column;
     background-image: url(../img/bandeira-franca.jpg);
@@ -116,8 +120,17 @@ main section:first-of-type div {
     width: 100%;
 }
 
-main section:first-of-type {
-    width: 300;
-    height: 400;
-    flex-grow: 0;
+section div a{
+    width: 80px;
+    height: 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+section div a:hover {
+    background-color: rgba(158, 158, 158, 0.374);
+    border-radius: 10%;
 }
