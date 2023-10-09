@@ -28,7 +28,8 @@ h1 {
 
 h2 {
     text-align: center;
-    color: blue;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
 }
 
 nav {
@@ -121,11 +122,12 @@ section div {
     align-self: center;
 }
 
-section div a{
+section a{
     width: 80px;
     height: 20px;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
     color: black;
     margin-bottom: 20px;
     align-self: center;
@@ -136,10 +138,58 @@ section div a:hover {
     border-radius: 10%;
 }
 
+section:nth-of-type(2) h2{
+    color: black;
+    text-shadow: 
+    0 0 1em rgb(255, 255, 255),
+    0 0 1.2em rgb(255, 255, 255),
+    0 0 1.1em rgb(255, 255, 255);
+}
+
+section:nth-of-type(2) a {
+    color: black;
+    text-shadow: 
+    0 0 1em rgb(226, 255, 245),
+    0 0 1.2em rgb(255, 255, 255),
+    0 0 1.1em rgb(255, 255, 255);
+}
+
+section:nth-of-type(3) h2 {
+    color: black;
+    text-shadow: 
+    0 0 1em rgb(226, 255, 245),
+    0 0 1.2em rgb(255, 255, 255),
+    0 0 1.1em rgb(255, 255, 255);
+}
+
+section:nth-of-type(3) a {
+    color: black;
+    text-shadow: 
+    0 0 1em rgb(226, 255, 245),
+    0 0 1.2em rgb(255, 255, 255),
+    0 0 1.1em rgb(255, 255, 255);
+}
+
 section:first-of-type div {
     background-image: url(../img/bandeira-franca.jpg);
 }
 
 section:nth-of-type(2) div {
     background-image: url(../img/bandeira-brasil.jpg);
+}
+
+section:nth-of-type(3) div {
+    background-image: url(../img/bandeira-canada.jpg);
+}
+
+section:nth-of-type(4) div {
+    background-image: url(../img/bandeira-italia.jpg);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    color: white;
+    align-self: center;
 }
