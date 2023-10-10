@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/normalize.css">
     <link rel="stylesheet" href="static/css/franca.css">
+    <script src="https://kit.fontawesome.com/e2731d92fe.js" crossorigin="anonymous"></script>
     <title>França</title>
 </head>
 
@@ -16,9 +17,9 @@
         </header>
         <nav>
             <ul>
-                <li><a href="">Resumo da viagem</a></li>
-                <li><a href="">Galeria de fotos</a></li>
-                <li><a href="">Depoimentos</a></li>
+                <li><a href="#resumo-viagem">Resumo da viagem</a></li>
+                <li><a href="#galeria-fotos">Galeria de fotos</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
             </ul>
         </nav>
         <span>
@@ -32,15 +33,16 @@
             </div>
         </span>
         <main>
-            <section>
+            <section id="resumo-viagem">
                 <h2>A viagem</h2>
-                <p>Uma viagem que ficará marcada na minha memória para o resto da minha vida! uma jornada magnífica
-                    entre um mundo completamente diferente e repleto de novidades!</p>
-                    <img src="static/gif/aviao.gif" alt="">
+                <p>Fizemos essa viagem para participar do casamento da minha irmã, que ocorreu no dia 16 de Abril de
+                    2022 em Bordeaux, na França. Foi tudo muito incrível, conhecemos uma cultura totalmente diferente
+                    da brasileira em todos os aspectos.</p>
+                <img src="static/gif/aviao.gif" alt="">
             </section>
-            <section>
+            <section id="galeria-fotos">
                 <h2>Galeria de fotos</h2>
-                <div class="pictures">
+                <div class="fotos">
                     <img src="static/img/galeria-franca-1.jpg" alt="">
                     <img src="static/img/galeria-franca-2.jpg" alt="">
                     <img src="static/img/galeria-franca-3.jpg" alt="">
@@ -49,9 +51,14 @@
                     <img src="static/img/galeria-franca-6.jpg" alt="">
                 </div>
             </section>
-            <section>
+            <section class="depoimentos" id="depoimentos">
                 <h2>Depoimentos</h2>
-                <p>Alguns comentários sobre a viagem</p>
+                <dl>
+                    <dt>Nelson:</dt>
+                    <dd><q>Passou rápido demais!</q></dd>
+                    <dt>Marcia:</dt>
+                    <dd><q>Não vejo a hora de voltar pra lá denovo!</q></dd>
+                </dl>
             </section>
         </main>
         <footer>
