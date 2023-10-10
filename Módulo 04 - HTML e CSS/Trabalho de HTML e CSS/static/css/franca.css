@@ -200,6 +200,10 @@ section p {
     border-radius: 5%;
 }
 
+section q {
+    quotes: none;
+}
+
 section dl {
     display: flex;
     flex-direction: column;
@@ -294,11 +298,11 @@ section:nth-of-type(4) div {
     flex-direction: column;
 }
 
-.pictures img {
+.fotos img {
     border: 0.2rem solid black;
 }
 
-.pictures img:hover {
+.fotos img:hover {
     box-shadow: 
     0 0 1em rgb(255, 255, 255),
     0 0 1.2em rgb(255, 255, 255),
