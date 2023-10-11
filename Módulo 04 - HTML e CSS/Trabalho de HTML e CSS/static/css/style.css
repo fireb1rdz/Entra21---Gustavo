@@ -48,7 +48,7 @@ h1 {
 h2 {
     text-align: center;
     color: rgb(0, 0, 0);
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
@@ -88,13 +88,13 @@ main {
     flex-direction: column;
 }
 
-.main-header {
+header {
     display: flex;
     flex-direction: column;
     padding: 20px 10px;
 }
 
-.main-header img:first-of-type {
+header img:first-of-type {
     margin: auto;
     padding: 15px;
 }

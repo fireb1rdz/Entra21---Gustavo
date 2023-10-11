@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,600;1,100;1,300;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(227,24,24,1) 30%, rgba(255,255,255,1) 50%, rgb(0, 0, 255) 80%);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.background-video video {
+    position: fixed;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.308);
+    align-self: center;
+}
+
+h1 {
+    color: rgb(56, 255, 122);
+    text-shadow: 
+    1px 2px 3px black,
+    1px 1px 1em rgb(209, 196, 228),
+    0 0 1.2em rgba(230, 230, 222, 0.522);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.container-pais {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 15px;
+}
+
+.container-pais:first-of-type img {
+    margin: 20px 0px 40px 0;
+    width: 100%
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: .1em;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    padding: 0rem;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav li {
+    list-style: none;
+    height: 2rem;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 1.3rem 1.1rem 1.3rem 1.1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-shadow: 
+    0 0 1em rgb(255, 255, 255),
+    0 0 1.2em rgb(255, 255, 255),
+    0 0 1.1em rgb(255, 255, 255);
+}
+
+nav a:hover {
+    text-shadow: 
+    0em 0em 1.2em white,
+    0 0 0.5em white;
+    animation-name: aumentar-fonte;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aumentar-fonte {
+    from {
+        font-size: 1rem;
+    }
+
+    to {
+        font-size: 2rem;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 200px;
+    height: 200px;
+}
+
+div:first-of-type img {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+.main-header img:first-of-type {
+    margin: auto;
+    padding: 15px;
+}
+
+.main-article {
+    display: block;
+    background-color: rgba(185, 185, 185, 0.63);
+    width: 300px;
+    height: fit-content;
+    border: 0px solid black;
+    margin: 0px 0px;
+    align-self: center;
+    border-radius: 15%;
+}
+
+.main-article p:first-of-type {
+    display: inline-block;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    height: fit-content;
+    text-align: center;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 300px;
+    align-self: center;
+}
+
+section a{
+    width: 80px;
+    height: 20px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+section p {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: "Fjalla One";
+    width: 300px;
+    height: fit-content;
+    border: 0px solid black;
+    margin: 0px 15px;
+    padding: 10px;
+    align-self: center;
+    border-radius: 5%;
+}
+
+section q {
+    quotes: none;
+}
+
+section dl {
+    display: flex;
+    flex-direction: column;
+}
+
+section dt {
+    text-align: left;
+    font-weight: 600;
+    color: white;
+}
+
+section dd {
+
+    align-content: flex-start;
+    text-align: center;
+    margin: 1.2rem;
+    color: yellow;
+}
+
+
+section div a:hover {
+    background-color: rgba(158, 158, 158, 0.374);
+    border-radius: 10%;
+}
+
+section:nth-of-type(1) h2{
+    color: black;
+    text-shadow: 
+    0 0 1em rgb(255, 255, 255),
+    0 0 1.2em rgb(255, 255, 255),
+    0 0 1.1em rgb(255, 255, 255);
+}
+
+section:nth-of-type(1) a{
+    color: black;
+    text-shadow: 
+    0 0 1em rgb(255, 255, 255),
+    0 0 1.2em rgb(255, 255, 255),
+    0 0 1.1em rgb(255, 255, 255);
+}
+
+section:nth-of-type(2) h2{
+    color: black;
+    text-shadow: 
+    0 0 1em rgb(255, 255, 255),
+    0 0 1.2em rgb(255, 255, 255),
+    0 0 1.1em rgb(255, 255, 255);
+}
+
+section:nth-of-type(2) a {
+    color: black;
+    text-shadow: 
+    0 0 1em rgb(226, 255, 245),
+    0 0 1.2em rgb(255, 255, 255),
+    0 0 1.1em rgb(255, 255, 255);
+}
+
+section:nth-of-type(3) h2 {
+    color: black;
+    text-shadow: 
+    0 0 1em rgb(226, 255, 245),
+    0 0 1.2em rgb(255, 255, 255),
+    0 0 1.1em rgb(255, 255, 255);
+}
+
+section:nth-of-type(3) a {
+    color: black;
+    text-shadow: 
+    0 0 1em rgb(226, 255, 245),
+    0 0 1.2em rgb(255, 255, 255),
+    0 0 1.1em rgb(255, 255, 255);
+}
+
+section:first-of-type div {
+    background-image: url(../img/bandeira-franca.jpg);
+}
+
+section:nth-of-type(2) div {
+    background-image: url(../img/bandeira-brasil.jpg);
+}
+
+section:nth-of-type(3) div {
+    background-image: url(../img/bandeira-canada.jpg);
+}
+
+section:nth-of-type(4) div {
+    background-image: url(../img/bandeira-italia.jpg);
+}
+
+.fotos {
+    display: flex;
+    flex-direction: column;
+}
+
+.fotos img {
+    border: 0.2rem solid black;
+}
+
+.fotos img:hover {
+    box-shadow: 
+    0 0 1em rgb(255, 255, 255),
+    0 0 1.2em rgb(255, 255, 255),
+    0 0 1.1em rgb(255, 255, 255);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    color: white;
+    align-self: center;
+    text-align: center;
+}
