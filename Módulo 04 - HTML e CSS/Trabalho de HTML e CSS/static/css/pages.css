@@ -9,7 +9,6 @@ html {
 }
 
 body {
-    background: linear-gradient(0deg, rgba(227,24,24,1) 30%, rgba(255,255,255,1) 50%, rgb(0, 0, 255) 80%);
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -50,9 +49,23 @@ h1 {
 }
 
 h2 {
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
+    color: rgb(56, 255, 122);
+    text-shadow: 
+    1px 2px 3px black,
+    1px 1px 1em rgb(209, 196, 228),
+    0 0 1.2em rgba(230, 230, 222, 0.522);
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: rgb(255, 252, 93);
+    border-top: 1px solid red;
+    padding-top: 20px;
+    text-shadow: 
+    0 0 1em rgb(255, 255, 255),
+    0 0 1.2em rgb(0, 0, 0),
+    0 0 1.1em rgb(0, 0, 0);
 }
 
 .container-pais {
@@ -163,6 +176,12 @@ section div {
     align-self: center;
 }
 
+.fotos .wikipedia {
+    text-decoration: none;
+    color: rgb(27, 14, 150);
+    font-size: 1rem;
+}
+
 section a{
     width: 80px;
     height: 20px;
@@ -185,7 +204,7 @@ section p {
     margin: 0px 15px;
     padding: 10px;
     align-self: center;
-    border-radius: 5%;
+    border-radius: 8%;
 }
 
 section q {
@@ -218,14 +237,6 @@ section div a:hover {
     border-radius: 10%;
 }
 
-section:nth-of-type(1) h2{
-    color: black;
-    text-shadow: 
-    0 0 1em rgb(255, 255, 255),
-    0 0 1.2em rgb(255, 255, 255),
-    0 0 1.1em rgb(255, 255, 255);
-}
-
 section:nth-of-type(1) a{
     color: black;
     text-shadow: 
@@ -234,23 +245,8 @@ section:nth-of-type(1) a{
     0 0 1.1em rgb(255, 255, 255);
 }
 
-section:nth-of-type(2) h2{
-    color: black;
-    text-shadow: 
-    0 0 1em rgb(255, 255, 255),
-    0 0 1.2em rgb(255, 255, 255),
-    0 0 1.1em rgb(255, 255, 255);
-}
 
 section:nth-of-type(2) a {
-    color: black;
-    text-shadow: 
-    0 0 1em rgb(226, 255, 245),
-    0 0 1.2em rgb(255, 255, 255),
-    0 0 1.1em rgb(255, 255, 255);
-}
-
-section:nth-of-type(3) h2 {
     color: black;
     text-shadow: 
     0 0 1em rgb(226, 255, 245),
@@ -274,20 +270,25 @@ section:nth-of-type(3) a {
 
 .fotos img {
     border: 0.2rem solid black;
+    border-radius: 8%;
     box-sizing: border-box;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+
+.fotos p {
+    box-sizing: border-box;
+    border: 10px solid rgb(0, 0, 0);
     transition: 0.5s;
 }
 
-.fotos img:hover {
+.fotos p:hover {
     transition: 0.5s;
     box-shadow: 
     0 0 1em rgb(255, 255, 255),
     0 0 1.2em rgb(255, 255, 255),
     0 0 1.1em rgb(255, 255, 255);
-}
-
-.fotos p {
-    box-sizing: border-box;
+    border: 10px solid rgb(56, 255, 122);
 }
 
 footer {

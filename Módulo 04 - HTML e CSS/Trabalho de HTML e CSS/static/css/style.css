@@ -48,10 +48,11 @@ h1 {
 }
 
 h2 {
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    color: rgb(56, 255, 122);
+    text-shadow: 
+    1px 2px 3px black,
+    0px 0px 1em rgb(0, 0, 0),
+    0 0 .5em rgb(0, 0, 0);
 }
 
 nav {
@@ -85,10 +86,10 @@ nav a {
 }
 
 nav a:hover {
-    color: yellow;
-    border: 1px solid yellow;
+    color: rgb(56, 255, 122);
+    border: 1px solid rgb(56, 255, 122);
     border-radius: 10%;
-    box-shadow: 0em 0em 1em yellow
+    box-shadow: 0em 0em 1em rgb(56, 255, 122)
 }
 
 main {
@@ -196,23 +197,7 @@ section div a:hover {
     background-color: rgba(122, 122, 122, 0.938);
 }
 
-section:nth-of-type(1) h2{
-    color: black;
-    text-shadow: 
-    0 0 1em rgb(255, 255, 255),
-    0 0 1.2em rgb(255, 255, 255),
-    0 0 1.1em rgb(255, 255, 255);
-}
-
 section:nth-of-type(1) a{
-    color: black;
-    text-shadow: 
-    0 0 1em rgb(255, 255, 255),
-    0 0 1.2em rgb(255, 255, 255),
-    0 0 1.1em rgb(255, 255, 255);
-}
-
-section:nth-of-type(2) h2{
     color: black;
     text-shadow: 
     0 0 1em rgb(255, 255, 255),
@@ -228,23 +213,7 @@ section:nth-of-type(2) a {
     0 0 1.1em rgb(255, 255, 255);
 }
 
-section:nth-of-type(3) h2 {
-    color: black;
-    text-shadow: 
-    0 0 1em rgb(226, 255, 245),
-    0 0 1.2em rgb(255, 255, 255),
-    0 0 1.1em rgb(255, 255, 255);
-}
-
 section:nth-of-type(3) a {
-    color: black;
-    text-shadow: 
-    0 0 1em rgb(226, 255, 245),
-    0 0 1.2em rgb(255, 255, 255),
-    0 0 1.1em rgb(255, 255, 255);
-}
-
-section:nth-of-type(4) h2 {
     color: black;
     text-shadow: 
     0 0 1em rgb(226, 255, 245),
