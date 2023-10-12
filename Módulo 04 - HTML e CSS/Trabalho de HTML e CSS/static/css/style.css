@@ -74,13 +74,19 @@ nav li {
 nav a {
     text-decoration: none;
     padding: 0.5rem;
-    color: yellow;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.329);
+    box-shadow: 0em 0em 1em white;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10%;
+    transition: 1s;
 }
 
 nav a:hover {
-    text-shadow: 
-    0em 0em 1.2rem white,
-    0 0 0.5rem white;
+    color: yellow;
+    border: 1px solid yellow;
+    border-radius: 10%;
+    box-shadow: 0em 0em 1em yellow
 }
 
 main {
@@ -89,19 +95,34 @@ main {
 }
 
 header {
+    height: 280px;
     display: flex;
     flex-direction: column;
-    padding: 20px 10px;
 }
 
 header img:first-of-type {
-    margin: auto;
-    padding: 15px;
+    z-index: 1;
+    position: relative;
+    align-self: center;
+    animation-name: aviao-aparecer;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes aviao-aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .main-article {
     display: block;
-    background-color: rgba(185, 185, 185, 0.63);
+    background-color: rgba(255, 255, 255, 0.87);
     width: 300px;
     height: fit-content;
     border: 0px solid black;
@@ -126,7 +147,6 @@ section {
     display: flex;
     flex-direction: column;
     margin: 20px 0px;
-    padding: 0px 20px;
     height: 200px;
     text-align: center;
 }
@@ -138,14 +158,17 @@ section div {
     background-size: 100%;
     width: 300px;
     height: 110px;
+    margin: 0.2rem;
     align-items: center;
     justify-content: center;
     align-self: center;
 }
 
 section a{
+    display: flex;
+    flex-direction: column;
     width: 80px;
-    height: 20px;
+    height: 30px;
     text-decoration: none;
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.3rem;
@@ -153,11 +176,19 @@ section a{
     color: black;
     align-self: center;
     text-align: center;
+    justify-content: center;
+    transition: 0.5;
 }
 
 section div a:hover {
-    background-color: rgba(122, 122, 122, 0.938);
+    transition: 0.5s;
     border-radius: 10%;
+    background-color: rgba(122, 122, 122, 0.938);
+}
+
+section div:hover {
+    transition: 0.5s;
+    border: 1px solid rgb(255, 255, 255)
 }
 
 section:nth-of-type(1) h2{
@@ -225,19 +256,19 @@ section:nth-of-type(4) a {
 }
 
 section:first-of-type div {
-    background-image: url(../img/bandeira-franca.jpg);
+    background-image: url(../img/bandeiras/bandeira-franca.jpg);
 }
 
 section:nth-of-type(2) div {
-    background-image: url(../img/bandeira-brasil.jpg);
+    background-image: url(../img/bandeiras/bandeira-brasil.jpg);
 }
 
 section:nth-of-type(3) div {
-    background-image: url(../img/bandeira-canada.jpg);
+    background-image: url(../img/bandeiras/bandeira-canada.jpg);
 }
 
 section:nth-of-type(4) div {
-    background-image: url(../img/bandeira-italia.jpg);
+    background-image: url(../img/bandeiras/bandeira-italia.jpg);
 }
 
 footer {

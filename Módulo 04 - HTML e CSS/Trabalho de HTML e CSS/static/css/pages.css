@@ -101,25 +101,15 @@ nav a {
     0 0 1em rgb(255, 255, 255),
     0 0 1.2em rgb(255, 255, 255),
     0 0 1.1em rgb(255, 255, 255);
+    transition: 0.5s;
 }
 
 nav a:hover {
     text-shadow: 
     0em 0em 1.2em white,
     0 0 0.5em white;
-    animation-name: aumentar-fonte;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes aumentar-fonte {
-    from {
-        font-size: 1rem;
-    }
-
-    to {
-        font-size: 2rem;
-    }
+    transition: 0.5s;
+    font-size: 2rem;
 }
 
 header {
@@ -222,6 +212,7 @@ section q {
 section dl {
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 section dt {
@@ -292,22 +283,6 @@ section:nth-of-type(3) a {
     0 0 1.1em rgb(255, 255, 255);
 }
 
-section:first-of-type div {
-    background-image: url(../img/bandeira-franca.jpg);
-}
-
-section:nth-of-type(2) div {
-    background-image: url(../img/bandeira-brasil.jpg);
-}
-
-section:nth-of-type(3) div {
-    background-image: url(../img/bandeira-canada.jpg);
-}
-
-section:nth-of-type(4) div {
-    background-image: url(../img/bandeira-italia.jpg);
-}
-
 .fotos {
     display: flex;
     flex-direction: column;
@@ -315,9 +290,13 @@ section:nth-of-type(4) div {
 
 .fotos img {
     border: 0.2rem solid black;
+    margin-bottom: 0.4rem;
+    box-sizing: border-box;
+    transition: 0.5s;
 }
 
 .fotos img:hover {
+    transition: 0.5s;
     box-shadow: 
     0 0 1em rgb(255, 255, 255),
     0 0 1.2em rgb(255, 255, 255),
