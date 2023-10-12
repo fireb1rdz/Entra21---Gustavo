@@ -31,11 +31,13 @@ body {
 }
 
 .container {
-    width: 450px;
+    width: 375px;
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.308);
+    align-items: center;
     align-self: center;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -127,6 +129,7 @@ div:first-of-type img {
 main {
     display: flex;
     flex-direction: column;
+    width: 375px;
 }
 
 .main-header {
