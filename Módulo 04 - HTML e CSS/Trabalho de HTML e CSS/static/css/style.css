@@ -333,12 +333,18 @@ footer {
     section div {
         width: 75%;
         height: 650px;
+        opacity: 0.3;
+    }
+
+    section div:hover {
+        opacity: 1;
     }
 
     section div a {
         font-size: 5rem;
         height: 20%;
         width: 20%;
+        opacity: 1;
     }
 
     section div a:hover {
