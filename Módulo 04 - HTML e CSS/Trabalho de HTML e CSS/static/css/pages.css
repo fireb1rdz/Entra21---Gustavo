@@ -303,3 +303,13 @@ footer {
     align-self: center;
     text-align: center;
 }
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 10rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
