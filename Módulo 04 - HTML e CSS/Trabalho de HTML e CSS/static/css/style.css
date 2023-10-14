@@ -172,7 +172,7 @@ section div {
     justify-content: center;
     align-self: center;
     border: 5px solid black;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 section div:hover {
@@ -333,7 +333,6 @@ footer {
     }
 
     .sessoes {  
-        border: 10px solid black;
         display: flex;
         }
 
@@ -363,10 +362,13 @@ footer {
         font-size: 2rem;
         height: fit-content;
         width: fit-content;
-        padding: .2rem;
+        padding: 0.2rem;
         color: rgb(56, 255, 122);
         background-color: rgb(0, 0, 0);
         text-shadow: none;
     }
 
+    footer {
+        height: 100px;
+    }
 }
