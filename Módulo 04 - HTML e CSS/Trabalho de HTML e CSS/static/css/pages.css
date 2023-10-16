@@ -323,7 +323,8 @@ footer a:hover {
     h1 {
         font-size: 5rem;
         padding: 0px;
-        margin: 30px 0;
+        margin-top: 0px;
+        margin-bottom: 30px;
     }
 
     h2 {
@@ -375,13 +376,15 @@ footer a:hover {
     }
     
     nav li {
-        width: 400px;
+        width: fit-content;
         margin: 0;
         padding: 0;
         list-style: none;
         height: 100%;
         text-align: center;
         justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     nav a {
