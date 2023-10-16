@@ -381,15 +381,11 @@ footer {
     .formulario {
         display: block;
         align-self: center;
-        width: 30%;
+        width: 90%;
         height: fit-content;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.2rem;
         color: white;
-    }
-
-    .formulario fieldset {
-
     }
 
     .formulario form {
@@ -402,10 +398,12 @@ footer {
     margin: 15px 0;
     box-sizing: border-box;
     text-align: start;
+    transition: 0.5s;
     }
 
     .formulario label:hover {
         color: rgb(56, 255, 122);
+        transition: 0.5s;
         }
 
     .formulario input {
@@ -434,15 +432,18 @@ footer {
     }
 
     .formulario-h2 {
+        display: block;
         align-self: center;
     }
 
     .formulario input[type=submit], input[type=reset] {
         cursor: pointer;
+        transition: 0.5s;
     }
 
     .formulario input[type=submit]:hover, input[type=reset]:hover {
         background-color: rgb(56, 255, 122);
+        transition: 0.5s;
     }
 
     .formulario textarea {
