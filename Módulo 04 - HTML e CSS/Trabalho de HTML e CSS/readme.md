@@ -1,5 +1,5 @@
-# Repositório de atividades - Gustavo Nelson Paganelli  - Entra21
+# ✈️ iTrip ✈️
 
-## 📚 Módulos 01 e 04 📚
+## 📚 Website desenvolvido utilizando HTML5 e CSS3 📚
 
-### 📖 Aulas e Trabalhos 📖
+### 📖 Um roteiro de viagens completo com imagens, descrições, formulários e total responsividade 📖
