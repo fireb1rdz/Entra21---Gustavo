@@ -98,7 +98,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 375px;
-    height: 650px;
+    height: 580px;
 }
 
 header {
@@ -158,11 +158,16 @@ section {
     text-align: center;
 }
 
+.sessoes {
+    box-sizing: border-box;
+}
+
 .redes-sociais {
     width: 250px;
     justify-content: space-between;
     border: 1px solid rgb(56, 255, 122);
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .paises {
@@ -237,11 +242,27 @@ section div a:hover {
 
 footer {
     display: flex;
-    align-items: center;
-    margin: 1rem;
+    flex-direction: column;
+    height: 80px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    justify-content: space-between;
     color: white;
-    align-self: center;
+
+}
+
+footer div {
     text-align: center;
+}
+
+footer a {
+    font-size: 2rem;
+    margin: 0px 20px;
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(56, 255, 122);
 }
 
 @media screen and (min-width: 1200px) {
@@ -322,7 +343,8 @@ footer {
         display: flex;
         flex-direction: column;
         border: 2px solid transparent;
-        width: 200px;
+        width: 200px
+        ;
         height: 150px;
         justify-content: center;
         transition: 0.5s;
@@ -459,6 +481,21 @@ footer {
     }
 
     footer {
+        display: flex;
+        flex-direction: column;
         height: 100px;
+        margin: 40px;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    footer a {
+        font-size: 2rem;
+        margin: 0px 20px;
+        color: white;
+    }
+
+    footer a:hover {
+        color: rgb(56, 255, 122);
     }
 }

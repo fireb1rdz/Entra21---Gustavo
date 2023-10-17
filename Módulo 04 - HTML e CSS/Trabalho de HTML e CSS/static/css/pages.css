@@ -180,10 +180,14 @@ section div {
     align-self: center;
 }
 
+.fotos {
+    margin-bottom: 40px;
+}
+
 .fotos .wikipedia {
     text-decoration: none;
     color: rgb(27, 14, 150);
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 section a{
@@ -199,14 +203,16 @@ section a{
 
 section p {
     display: block;
+    width: 300px;
+    height: fit-content;
+    margin: 0px 15px;
+    padding: 10px;
+    line-height: 2.2rem;
     background-color: rgb(255, 255, 255);
     color: black;
     font-family: "Fjalla One";
-    width: 300px;
-    height: fit-content;
+    font-size: 1.2rem;
     border: 0px solid black;
-    margin: 0px 15px;
-    padding: 10px;
     align-self: center;
     border-radius: 30px;
 }
@@ -283,6 +289,7 @@ section:nth-of-type(3) a {
 
 .fotos p {
     box-sizing: border-box;
+    line-height: 1.8rem;
     border: 10px solid rgb(0, 0, 0);
     transition: 0.5s;
 }
@@ -301,6 +308,7 @@ footer {
     flex-direction: column;
     height: 80px;
     margin-bottom: 50px;
+    margin-top: 50px;
     justify-content: space-between;
     color: white;
 }
@@ -329,6 +337,7 @@ footer a:hover {
 
     h2 {
         font-size: 2rem;
+        margin-top: 50px;
     }
 
     .container {

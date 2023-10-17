@@ -373,7 +373,7 @@ footer a:hover {
     section div {
         width: 50%;
         height: 90px;
-        opacity: 0.3;
+        opacity: 1;
     }
 
     section div:hover {
