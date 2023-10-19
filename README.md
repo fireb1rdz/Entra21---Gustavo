@@ -1,5 +1,13 @@
 # Repositório de atividades - Gustavo Nelson Paganelli  - Entra21
 
-## 📚 Módulos 01 e 04 📚
+## 📚 Módulo 01 - Lógica de programação com Python 📚
 
-### 📖 Aulas e Trabalhos 📖
+## 📚 Módulo 02 - Metodologias Ágeis para TI 📚
+
+## 📚 Módulo 03 - Git e GitHub 📚
+
+## 📚 Módulo 04 - HTML e CSS 📚
+
+## 📚 Módulo 04 - HTML e CSS 📚
+
+## 📚 Módulo 05 - JavaScript com jQuery 📚
