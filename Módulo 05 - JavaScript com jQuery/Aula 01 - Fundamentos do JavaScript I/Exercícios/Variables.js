@@ -37,11 +37,9 @@ let currentUserName = "User"
 // const AGE = someCode(BIRTHDAY); // make age uppercase?
 
 
-const BIRTHDAY = "18.04.1982";
+const BIRTHDAY = "18.04.1982"; // Our birthday won't never change, so we can use the uppercase.
 
-const age = someCode(BIRTHDAY)
-
-// ANSWER: our birthday won't never change, so we can use the uppercase. Otherwise, our age is going to change in the next year, so we use the lowercase.
+const age = someCode(BIRTHDAY) //  Otherwise, our age is going to change in the next year, so we use the lowercase.
 
 
 //------------------------------------------------------------------------------------------------------------------------------------------------
