@@ -1,4 +1,4 @@
-// 01 - 
+// 01 - String quotes
 // What is the output of the script?
 
 // let name = "Ilya";
@@ -9,7 +9,7 @@
 
 // alert( `hello ${name}` ); // ?
 
-let name = "Guto"
+let name = "Ilya"
 
 alert(`hello ${1}`); // the output will be hello 1
 
