@@ -69,7 +69,7 @@ if (number > 0) {
 // } else {
 //   result = 'Over';
 // }
-
+        
 a = Number(prompt("Digite o valor de A:"))
 b = Number(prompt("Digite o valor de B:"))
 
