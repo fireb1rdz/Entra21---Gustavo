@@ -93,3 +93,8 @@ sumOfSalaries(salaries)
 
 // P.S. Use typeof to check for a number here.
 
+const multiplyNumeric = obj => {
+    for (let key in obj) if (typeof(obj[key]) === "number")
+    obj[key] *= 2
+}
+
