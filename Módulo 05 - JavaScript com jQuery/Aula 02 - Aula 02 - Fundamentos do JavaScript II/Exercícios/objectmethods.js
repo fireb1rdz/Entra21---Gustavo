@@ -10,6 +10,7 @@ const sumSalaries = obj => {
         accumulator += obj[key]
     } 
     return accumulator
+    
 }
 
 alert(`A soma dos salários é R$ ${sumSalaries(salaries)}`)
