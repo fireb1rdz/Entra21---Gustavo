@@ -10,9 +10,8 @@ const sumSalaries = obj => {
     let accumulator = 0
     for (let key in obj) if (obj[key] >= 0) {
         accumulator += obj[key]
-    } 
+    }
     return accumulator
-    
 }
 console.log(`A soma dos salários é R$ ${sumSalaries(salaries)}`)
 
