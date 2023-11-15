@@ -22,7 +22,7 @@ $(document).ready(() => {
             .then(data => {
                 resultados = data.results
                 resultados.forEach(element => {
-                    $newCard = $("<div></div>").addClass("card mt-3 ms-0").css("width", "18rem")
+                    $newCard = $("<div></div>").addClass("card m-2").css("width", "18rem")
                     $cardImage = $(`<img src="${element.image}"></img>`).addClass("card-img-top")
                     $cardBody = $("<div></div>").addClass("card-body")
                     $cardTitle = $("<h5></h5>").addClass("card-title").text(element.name)
