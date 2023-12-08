@@ -10,6 +10,7 @@ listar_pessoas() - Mostra as informações de todas as pessoas da agenda.
 As pessoas da agenda devem ser objetos da classe Pessoa (ex. 1).
 """
 
+import re
 class InvalidNameError(Exception):
     pass
 
@@ -23,7 +24,13 @@ class Person:
     def __init__(self, name: str, phone: str):
         self.name = name
         self.phone = phone
+
+    def __str__(self):
+        return f"Nome: {self.name}"
         
+    def __repr__(self):
+        return f"Nome: {self.name}"
+    
     @property
     def name(self):
         """str: Nome da pessoa."""
@@ -71,4 +78,18 @@ class Person:
 
 class Agenda:
     """A classe agenda contém pessoas. Podendo adicionar, remover, buscar e listar as pessoas."""
+    
+    def __init__(self, nome: str) -> None:
 
+        self.nome = nome
+        self.pessoas = []
+
+    def adicionar_pessoa(self, pessoa: Person):
+        if len(self.pessoas) < 10:
+            self.pessoas.append(pessoa)
+
+if __name__ == "__main__":
+    gustavo = Person("Gustavo Paganelli", "+55 47 9 2000-0223")
+    agenda1 = Agenda("Agenda de contatos")
+    agenda1.adicionar_pessoa(gustavo)
+    print(agenda1.pessoas)
