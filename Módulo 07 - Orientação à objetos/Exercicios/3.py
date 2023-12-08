@@ -10,6 +10,13 @@ listar_pessoas() - Mostra as informações de todas as pessoas da agenda.
 As pessoas da agenda devem ser objetos da classe Pessoa (ex. 1).
 """
 
+class InvalidNameError(Exception):
+    pass
+
+
+class InvalidPhoneError(Exception):
+    pass
+
 class Person:
     """Person representa uma pessoa."""
     
@@ -62,4 +69,6 @@ class Person:
         """
         return len(name.strip().split()) > 1
 
+class Agenda:
+    """A classe agenda contém pessoas. Podendo adicionar, remover, buscar e listar as pessoas."""
 
