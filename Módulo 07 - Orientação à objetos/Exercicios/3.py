@@ -119,7 +119,7 @@ Telefone: {pessoa.phone}""")
     
     def listar_pessoas(self):
         """Lista as pessoas na agenda."""
-        
+
         for pessoa in self.pessoas:
             print(f"""
 Nome: {pessoa.name} 
