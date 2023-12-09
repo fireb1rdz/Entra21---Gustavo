@@ -94,13 +94,18 @@ class Agenda:
 
     def buscar_pessoa(self, pessoa: Person):
         if pessoa in self.pessoas:
-            print(f"Nome: {pessoa.name} \nTelefone: {pessoa.phone}")
+            print(f"""
+Nome: {pessoa.name} 
+Telefone: {pessoa.phone}""")
         else:
             print("Pessoa não localizada")
     
     def listar_pessoas(self):
         for pessoa in self.pessoas:
-            print(f"Nome: {pessoa.name} \nTelefone: {pessoa.phone}\n")
+            print(f"""
+Nome: {pessoa.name} 
+Telefone: {pessoa.phone}
+""")
 
 if __name__ == "__main__":
     gustavo = Person("Gustavo Paganelli", "+55 47 9 2000-0223")

@@ -5,3 +5,6 @@ Modelo (String)
 Ano (int)
 Velocidade (int)
 """
+class Carro:
+    """Essa classe representa um carro"""
+

@@ -54,13 +54,21 @@ class Aluno:
         return(media)
 
     def get_situacao(self):
+        """Verifica e retorna a situação de um aluno.
+        0 à 4 - Reprovado
+        5 à 6 - Recuperação
+        7 à 10 - Aprovado
+
+        Returns:
+            : True caso o número de telefone seja válido, False caso não seja.
+        """
 
         if self.get_media() <= 4:
-            print("Reprovado!")
+            return f"Reprovado!"
         elif self.get_media() <= 6:
-            print("Recuperação!")
+            return f"Recuperação!"
         elif self.get_media() <= 10:
-            print("Aprovado!")
+            return f"Aprovado!"
     
 if __name__ == "__main__":
     gustavo = Aluno(123123, "Gustavo", [10, 5, 8])
@@ -70,4 +78,4 @@ Nome: {gustavo.nome}
 Notas: {gustavo.notas}
 """)
     gustavo.get_media()
-    gustavo.get_situacao()
+    print(gustavo.get_situacao())
