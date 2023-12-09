@@ -88,8 +88,24 @@ class Agenda:
         if len(self.pessoas) < 10:
             self.pessoas.append(pessoa)
 
+    def remover_pessoa(self, pessoa: Person):
+        if pessoa in self.pessoas:
+            self.pessoas.remove(pessoa)
+
+    def buscar_pessoa(self, pessoa: Person):
+        if pessoa in self.pessoas:
+            print(f"Nome: {pessoa.name} \nTelefone: {pessoa.phone}")
+        else:
+            print("Pessoa não localizada")
+    
+    def listar_pessoas(self):
+        for pessoa in self.pessoas:
+            print(f"Nome: {pessoa.name} \nTelefone: {pessoa.phone}\n")
+
 if __name__ == "__main__":
     gustavo = Person("Gustavo Paganelli", "+55 47 9 2000-0223")
+    juliana = Person("Juliana Ferreira", "+55 47 9 4230-0356")
     agenda1 = Agenda("Agenda de contatos")
     agenda1.adicionar_pessoa(gustavo)
-    print(agenda1.pessoas)
+    agenda1.adicionar_pessoa(juliana)
+    agenda1.listar_pessoas()
