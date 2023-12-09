@@ -17,6 +17,7 @@ class Aluno:
     
     @property
     def numero_matricula(self):
+        """str: Numero da matrícula."""
         return self.__numero_matricula
     
     @numero_matricula.setter
@@ -25,31 +26,35 @@ class Aluno:
     
     @property
     def nome(self):
+        """str: Nome do aluno."""
         return self.__nome
     
     @nome.setter
-    def nome(self, nome):
-        self.__nome = nome
+    def nome(self, novo_nome: str):
+        self.__nome = novo_nome
     
     @property
     def notas(self):
+        """str: Nome do aluno."""
         return self.__notas
 
     @notas.setter
-    def notas(self, notas: list):
-        self.__notas = notas
+    def notas(self, novas_notas: list):
+        self.__notas = novas_notas
 
     def get_media(self):
-        # i = 0
-        # for i in self.notas:
-        #     print(i)
-        #     i += i
-        #     print(i)
+        """Retorna a media das notas do aluno.
+
+        Returns:
+            float: media de notas do aluno
+        """
+
         soma = sum(self.notas)
         media = soma / len(self.notas)
         return(media)
 
     def get_situacao(self):
+
         if self.get_media() <= 4:
             print("Reprovado!")
         elif self.get_media() <= 6:
