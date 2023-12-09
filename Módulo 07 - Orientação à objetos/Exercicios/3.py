@@ -85,14 +85,31 @@ class Agenda:
         self.pessoas = []
 
     def adicionar_pessoa(self, pessoa: Person):
+        """Adiciona uma pessoa na agenda.
+        
+        Args:
+            pessoa (Person): objeto Person que será adicionado.
+            
+        """
         if len(self.pessoas) < 10:
             self.pessoas.append(pessoa)
 
     def remover_pessoa(self, pessoa: Person):
+        """Remove uma pessoa na agenda.
+        
+        Args:
+            pessoa (Person): objeto Person que será removido.
+            
+        """
         if pessoa in self.pessoas:
             self.pessoas.remove(pessoa)
 
     def buscar_pessoa(self, pessoa: Person):
+        """Busca uma pessoa na agenda.
+        
+        Args:
+            pessoa (Person): objeto Person que será buscada.
+        """
         if pessoa in self.pessoas:
             print(f"""
 Nome: {pessoa.name} 
@@ -101,6 +118,8 @@ Telefone: {pessoa.phone}""")
             print("Pessoa não localizada")
     
     def listar_pessoas(self):
+        """Lista as pessoas na agenda."""
+        
         for pessoa in self.pessoas:
             print(f"""
 Nome: {pessoa.name} 
