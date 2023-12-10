@@ -15,11 +15,17 @@ class Veiculo:
         self.ano = ano
         self.valor_base = valor_base
 
+    # Formata a visualização do objeto
     def __str__(self) -> str:
         return f"Marca: {self.marca} | Ano: {self.ano} | Valor: {self.valor_base}"
     
 
-    def calcular_imposto(self): 
+    def calcular_imposto(self) -> int: 
+        """Realiza o cálculo do imposto a ser pago pelo veículo
+        
+        Returns:
+            valor_imposto (float): Valor do imposto à ser pago.
+        """
         anos_considerados = 2023 - self.ano
         valor_depreciacao = anos_considerados * (5/100 * self.valor_base)
         valor_imposto = (2/100) * valor_depreciacao
