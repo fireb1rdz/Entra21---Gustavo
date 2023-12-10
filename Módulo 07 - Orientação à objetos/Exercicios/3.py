@@ -22,8 +22,8 @@ class Person:
     """Person representa uma pessoa."""
     
     def __init__(self, name: str, phone: str):
-        self.name = name
-        self.phone = phone
+        self.__name = name
+        self.__phone = phone
 
     def __str__(self):
         return f"Nome: {self.name}"
@@ -133,3 +133,4 @@ if __name__ == "__main__":
     agenda1.adicionar_pessoa(gustavo)
     agenda1.adicionar_pessoa(juliana)
     agenda1.listar_pessoas()
+    print(gustavo.name)
