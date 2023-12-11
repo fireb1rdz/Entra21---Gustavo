@@ -13,11 +13,11 @@ Calcular valor total: retorna o valor total do estoque, multiplicando o preço p
 class Produto:
     
     def __init__(self, nome:str, preco: float, quantidade_estoque: int) -> None:
-        """Essa classe representa um produto
+        """Essa classe representa um produto.
         
         Args:
-            nome (str): Nome do produto
-            preco (float): Preço do produto
+            nome (str): Nome do produto.
+            preco (float): Preço do produto.
             quantidade_estoque (int): Quantidade disponível em estoque do produto.
         """
         self.nome = nome
@@ -31,7 +31,7 @@ class Produto:
             quantidade_venda (int): Quantidade do produto a ser vendida (se possui estoque disponível para determinada venda retorna True, caso contrário retorna False.)
         
         Returns:
-            True: Venda realizada com sucesso
+            True: Venda realizada com sucesso.
             False: Quantidade no estoque insuficiente para a venda.
         """
         if self.quantidade_estoque < quantidade_venda:
@@ -49,7 +49,7 @@ class Produto:
         self.quantidade_estoque += quantidade_compra
 
     def calcular_valor_estoque(self) -> float:
-        """Realiza a multiplicação da quantidade em estoque pelo preço do produto
+        """Realiza a multiplicação da quantidade em estoque pelo preço do produto.
         
         Returns: 
             valor_estoque (float): Valor do estoque disponível do produto.
