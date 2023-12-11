@@ -19,7 +19,12 @@ class InvalidPhoneError(Exception):
     pass
 
 class Person:
-    """Person representa uma pessoa."""
+    """Person representa uma pessoa.
+    
+    Attributes:
+        name (str) = Nome da pessoa
+        
+    """
     
     def __init__(self, name: str, phone: str):
         self.__name = name
@@ -93,6 +98,8 @@ class Agenda:
         """
         if len(self.pessoas) < 10:
             self.pessoas.append(pessoa)
+        else:
+            print("Agenda lotada.")
 
     def remover_pessoa(self, pessoa: Person):
         """Remove uma pessoa na agenda.
