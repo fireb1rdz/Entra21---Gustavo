@@ -8,10 +8,15 @@ get_situacao() - Informa a situação do aluno com base no critérios:
 """
 
 class Aluno:
-    """Aluno representa um aluno"""
+    """Aluno representa um aluno
+    
+    Attributes:
+        name (str): Nome do aluno
+        grades (List[float]): Notas do aluno
+    """
     def __init__(self, numero_matricula: str, nome: str, notas: list) -> None:
         
-        self.numero_matricula = numero_matricula
+        self.__numero_matricula = numero_matricula
         self.nome = nome
         self.notas = notas
     
@@ -19,28 +24,6 @@ class Aluno:
     def numero_matricula(self):
         """str: Numero da matrícula."""
         return self.__numero_matricula
-    
-    @numero_matricula.setter
-    def numero_matricula(self, numero_matricula):
-        self.__numero_matricula = numero_matricula
-    
-    @property
-    def nome(self):
-        """str: Nome do aluno."""
-        return self.__nome
-    
-    @nome.setter
-    def nome(self, novo_nome: str):
-        self.__nome = novo_nome
-    
-    @property
-    def notas(self):
-        """str: Nome do aluno."""
-        return self.__notas
-
-    @notas.setter
-    def notas(self, novas_notas: list):
-        self.__notas = novas_notas
 
     def get_media(self):
         """Retorna a media das notas do aluno.
@@ -49,9 +32,7 @@ class Aluno:
             float: media de notas do aluno
         """
 
-        soma = sum(self.notas)
-        media = soma / len(self.notas)
-        return(media)
+        return sum(self.notas) / len(self.notas)
 
     def get_situacao(self):
         """Verifica e retorna a situação de um aluno.
@@ -60,7 +41,7 @@ class Aluno:
         7 à 10 - Aprovado
 
         Returns:
-            : True caso o número de telefone seja válido, False caso não seja.
+            str: Retorna a palavra conforme condição.
         """
 
         if self.get_media() <= 4:
@@ -71,7 +52,7 @@ class Aluno:
             return f"Aprovado!"
     
 if __name__ == "__main__":
-    gustavo = Aluno(123123, "Gustavo", [10, 5, 8])
+    gustavo = Aluno(123123, "Gustavo", [10, 2, 2])
     print(f"""
 Matrícula: {gustavo.numero_matricula}
 Nome: {gustavo.nome} 
@@ -79,3 +60,5 @@ Notas: {gustavo.notas}
 """)
     gustavo.get_media()
     print(gustavo.get_situacao())
+    gustavo.__numero_matricula = 0
+    print(gustavo.numero_matricula)
