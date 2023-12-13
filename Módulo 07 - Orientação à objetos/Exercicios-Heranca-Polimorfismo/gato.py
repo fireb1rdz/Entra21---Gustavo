@@ -17,10 +17,12 @@ class Gato(Animal):
 
     def miar(self):
         """Emite o som do gato."""
+        super().emitir_som()
         print(f"O {self.nome} miou!")
 
     def mover(self):
         """Move o gato de lugar."""
+        super().mover()
         print(f"O {self.nome} se locomoveu!")
 
 if __name__ == "__main__":

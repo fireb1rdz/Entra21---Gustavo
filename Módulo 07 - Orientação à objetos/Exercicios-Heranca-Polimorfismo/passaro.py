@@ -15,11 +15,11 @@ class Passaro(Animal):
         super().__init__(nome, cor)
         self.raca = raca
 
-    def cantar(self):
+    def emitir_som(self):
         """Emite o som do pássaro."""
         print(f"O {self.nome} cantou!")
 
-    def voar(self):
+    def mover(self):
         """Move o pássaro de lugar"""
         print(f"O {self.nome} voou!")
 
@@ -30,4 +30,4 @@ if __name__ == "__main__":
     passaro_do_Gustavo.voar()
     passaro_2 = Passaro("Botinha", "Preto", "Raça2")
     passaro_2.cantar()
-    passaro_2.voar()
+    passaro_2.mover()
