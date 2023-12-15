@@ -25,6 +25,7 @@ def test_add_person_failed(capfd):
 
     assert "Agenda lotada.\n" == out
     assert len(agenda.pessoas) == 10
+    
 
 def test_remove_person():
     agenda = Agenda("Agenda de contatos.")

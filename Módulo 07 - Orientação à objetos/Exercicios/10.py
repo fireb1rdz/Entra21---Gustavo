@@ -30,6 +30,7 @@ if __name__ == "__main__":
     triangulo1 = Triangulo(10, 19, 12)
     triangulo2 = Triangulo(10, 10, 12)
     triangulo3 = Triangulo(10, 10, 10)
+    
     print(triangulo1.verificar_tipo())
     print(triangulo2.verificar_tipo())
     print(triangulo3.verificar_tipo())
