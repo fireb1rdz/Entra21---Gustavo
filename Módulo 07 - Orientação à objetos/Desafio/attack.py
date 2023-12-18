@@ -10,5 +10,8 @@ class Attack:
         self.name = name
         self.damage = damage
         self.type = type
+    
+    def __repr__(self) -> str:
+        return f"{self.name}"
 
     

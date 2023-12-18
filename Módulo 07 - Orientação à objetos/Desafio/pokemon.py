@@ -11,13 +11,13 @@ class Pokemon:
         self.name = name
         self.type = type
         self.hp = hp
-        self.attacks = [attacks]
+        self.attacks = attacks
 
     def __str__(self) -> str:
-        return f"Name: {self.name} | HP: {self.hp}"
+        return f"{self.name}"
 
     def __repr__(self) -> str:
-        return f"Name: {self.name} | HP: {self.hp}"
+        return f"{self.name}"
     
     def receive_damage(self, damage):
         """Método para receber dano."""
