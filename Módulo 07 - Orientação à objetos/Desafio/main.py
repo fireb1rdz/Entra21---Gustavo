@@ -27,8 +27,9 @@ Choose your Pokemon: """))
         machine_pokemon = pokemons[randint(0, len(pokemons) - 1)]
         while user_pokemon == machine_pokemon:
             machine_pokemon = pokemons[randint(0, len(pokemons) - 1)]
+        print(f"Machine chose {machine_pokemon}, get ready!")
         battle = Battle(user_pokemon, machine_pokemon)
-        round = 2
+        round = randint(2,3)
         while True:
             if round % 2 == 0:
                 print(f"""
