@@ -15,6 +15,7 @@ if __name__ == "__main__":
     pokemons = [charizard, squirtle]
 
     def battle_start():
+        """battle_start starts the battle manipulation"""
 
         user_choice = int(input("""
 Welcome to Pokemon Battle 2.0!

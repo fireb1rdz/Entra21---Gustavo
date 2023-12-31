@@ -25,6 +25,14 @@ class Battle:
             print(f"{self.machine_pokemon} was defeated! {self.user_pokemon} won!")
     
     def machine_turn(self, attack: Attack):
+        """machine_turn is called when the machine is going to attack.
+        
+        Args:
+            attack (Attack): The attack the user chose.
+        
+        Returns: 
+            winner (Pokemon): The winner pokemon.
+        """
         damage_multiplier = DamageCalculator.get_multiplier(attack.type, self.user_pokemon.type)
         damage = attack.damage * damage_multiplier
         self.user_pokemon.receive_damage(damage)
