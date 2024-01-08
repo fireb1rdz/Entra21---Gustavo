@@ -21,8 +21,6 @@ class Battle:
         print(f"\n{self.user_pokemon.name}: {self.user_pokemon.hp} HP")
         print(f"{self.machine_pokemon.name}: {self.machine_pokemon.hp} HP")
         winner = self.battle_end()
-        if winner:
-            print(f"{self.machine_pokemon} was defeated! {self.user_pokemon} won!")
     
     def machine_turn(self, attack: Attack):
         """machine_turn is called when the machine is going to attack.
@@ -45,7 +43,7 @@ class Battle:
     def battle_end(self) -> Pokemon:
         """Verifica se algum dos pokemons foi derrotado."""
         if not self.user_pokemon.verify_hp():
-            return self.user_pokemon
-        elif not self.machine_pokemon.verify_hp():
             return self.machine_pokemon
-        return False
+        elif not self.machine_pokemon.verify_hp():
+            return self.user_pokemon
+

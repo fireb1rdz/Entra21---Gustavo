@@ -1,13 +1,17 @@
 from attack import Attack
 
 class Pokemon:
-    """Pokemon representa um pokemon
+    """Pokemon represents a Pokemon
     
     Attributes:
-        nome (str): Nome do pokemon
-        tipo (str): Tipo do pokemon
+        id (int): Pokemon ID
+        name (str): Pokemon's name
+        type (str): Pokemon's type
+        hp (int): Pokemon's health points
+        attacks (Attack[list]): List with the Pokemon's attacks
     """
-    def __init__(self, name: str, type: str, hp: int, *attacks: Attack) -> None:
+    def __init__(self, id: int, name: str, type: str, hp: int, *attacks: Attack) -> None:
+        self.id = id
         self.name = name
         self.type = type
         self.hp = hp
@@ -20,11 +24,11 @@ class Pokemon:
         return f"{self.name}"
     
     def receive_damage(self, damage):
-        """Método para receber dano."""
+        """Method to receive damage."""
         self.hp -= damage
     
     def verify_hp(self):
-        """Verificar se está vivo."""
+        """Verifies if it's alive."""
         if self.hp > 0:
             return True
         return False
