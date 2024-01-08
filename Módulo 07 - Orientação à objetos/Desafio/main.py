@@ -3,9 +3,14 @@ from attack import Attack
 from damage_calculator import DamageCalculator
 from battle import Battle
 from random import randint
-from time import sleep
+from round_manager import Round
+from pokemon_repository import PokemonRepository
 
 if __name__ == "__main__":
+    round = Round()
+    pokemon_repository = PokemonRepository("pokemons")
+    pokemons = pokemon_repository.get_pokemons()
+    print(pokemons[1])
     punch = Attack("punch", 20, "normal")
     water = Attack("waterpunch", 20, "water")
     plantAttack = Attack("plant attack", 20, "plant")
@@ -21,7 +26,7 @@ if __name__ == "__main__":
             print(f"{number + 1}) {attack}")
         user_attack_choice = int(input("\nChoose your attack: "))
         print(f"You chose {user_pokemon.attacks[user_attack_choice - 1]}!")
-        round_timer()
+        round.timer()
         battle.user_turn(user_pokemon.attacks[user_attack_choice - 1])
         return
     
@@ -29,22 +34,9 @@ if __name__ == "__main__":
         machine_attack_choice = randint(0, len(machine_pokemon.attacks) - 1)
         print(f"Machine turn - {machine_pokemon}\n")
         print(f"Machine chose {machine_pokemon.attacks[machine_attack_choice]}")
-        round_timer()
+        round.timer()
         battle.machine_turn(machine_pokemon.attacks[machine_attack_choice])
         return
-
-    def round_timer():
-        sleep(1)
-        print("\n3")
-        sleep(1)
-        print("2")
-        sleep(1)
-        print("1")
-        sleep(1)
-        return
-
-    def separator():
-        print("--------------------------------------------------")
 
     def battle_start():
         """battle_start starts the battle manipulation"""
@@ -59,7 +51,6 @@ if __name__ == "__main__":
             machine_pokemon = pokemons[randint(0, len(pokemons) - 1)]
         print(f"Machine chose {machine_pokemon}, get ready!")
         battle = Battle(user_pokemon, machine_pokemon) # Create an object with the Battle class
-        round = randint(2,3) # Randomizes the initial round
         while True:
             winner = battle.battle_end() # Verifing if there is any winner
             if winner:
@@ -69,13 +60,13 @@ if __name__ == "__main__":
                     print(f"{user_pokemon} was defeated. {machine_pokemon} won!")
                 return
 
-            if round % 2 == 0: # Defines whose turn it i
-                separator()
+            if round.round % 2 == 0: # Defines whose turn it i
+                round.separator()
                 user_attack_choice(user_pokemon, battle)
-                round += 1
+                round.next()
             else:
-                separator()
+                round.separator()
                 machine_attack_choice(machine_pokemon, battle)
-                round += 1
+                round.next()
 
 battle_start()
