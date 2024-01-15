@@ -1,8 +1,3 @@
-"""
-Repositório é uma classe responsável por lidar com a persistência e recuperação
-de dados em uma fonte de armazenamento, como um banco de dados, arquivo ou serviço
-externo.
-"""
 from typing import Any, List
 import sqlite3
 from pokemon import Pokemon

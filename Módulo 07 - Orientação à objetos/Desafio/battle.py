@@ -25,6 +25,7 @@ class Battle:
         """
         damage_multiplier = DamageCalculator.get_multiplier(attack.type, self.machine_pokemon.type)
         damage = attack.damage * damage_multiplier
+        print(f"Damage: {damage}")
         self.machine_pokemon.receive_damage(damage)
         print(f"\n{self.user_pokemon.name}: {self.user_pokemon.hp} HP")
         print(f"{self.machine_pokemon.name}: {self.machine_pokemon.hp} HP")
@@ -41,6 +42,7 @@ class Battle:
         """
         damage_multiplier = DamageCalculator.get_multiplier(attack.type, self.user_pokemon.type)
         damage = attack.damage * damage_multiplier
+        print(f"Damage: {damage}")
         self.user_pokemon.receive_damage(damage)
         print(f"\n{self.user_pokemon.name}: {self.user_pokemon.hp} HP")
         print(f"{self.machine_pokemon.name}: {self.machine_pokemon.hp} HP")
