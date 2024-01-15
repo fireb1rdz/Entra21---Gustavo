@@ -1,12 +1,12 @@
 class DamageCalculator:
-    """DamageCalculator representa uma calculadora de dano de ataque.
+    """DamageCalculator represents a damage calculator.
     
     Attributes:
-        defensor_pokemon (Pokemon): O pokemon que está defendendo.
-        attack (Attack): O ataque utilizado.
+        defensor_pokemon (Pokemon): The Pokemon that will receive the damage.
+        attack (Attack): The attack.
 
     Returns:
-        (int): Multiplicador de dano.
+        (int): Damage multiplier.
 
     """
     type_multiplier = {
@@ -19,7 +19,13 @@ class DamageCalculator:
     
     @staticmethod
     def get_multiplier(attack_type: str, defender_type: str):
-        """Calcula o multiplicador de um ataque"""
+        """Calculate the multiplier of an Attack according to the type_multiplier dictionary.
+        
+        Args:
+            attack_type (Attack): The attack type
+        
+        Returns: 
+            defender_type (Pokemon): The defender's pokemon type."""
         return DamageCalculator.type_multiplier.get((attack_type, defender_type), 1)
 
 

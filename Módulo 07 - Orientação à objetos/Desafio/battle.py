@@ -15,6 +15,14 @@ class Battle:
         self.machine_pokemon = machine_pokemon
 
     def user_turn(self, attack: Attack):
+        """user_turn is called when the user is going to attack.
+        
+        Args:
+            attack (Attack): The attack the user chose.
+        
+        Returns: 
+            winner (Pokemon): The winner pokemon.
+        """
         damage_multiplier = DamageCalculator.get_multiplier(attack.type, self.machine_pokemon.type)
         damage = attack.damage * damage_multiplier
         self.machine_pokemon.receive_damage(damage)
@@ -26,7 +34,7 @@ class Battle:
         """machine_turn is called when the machine is going to attack.
         
         Args:
-            attack (Attack): The attack the user chose.
+            attack (Attack): The attack the machine chose.
         
         Returns: 
             winner (Pokemon): The winner pokemon.
@@ -41,7 +49,10 @@ class Battle:
             return winner
 
     def battle_end(self) -> Pokemon:
-        """Verifica se algum dos pokemons foi derrotado."""
+        """Verifies if there is a winner.
+        
+        Returns: 
+            Pokemon: The winner pokemon."""
         if not self.user_pokemon.verify_hp():
             return self.machine_pokemon
         elif not self.machine_pokemon.verify_hp():

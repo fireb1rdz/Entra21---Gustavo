@@ -8,14 +8,12 @@ class Pokemon:
         name (str): Pokemon's name
         type (str): Pokemon's type
         hp (int): Pokemon's health points
-        attacks (Attack[list]): List with the Pokemon's attacks
     """
-    def __init__(self, id: int, name: str, type: str, hp: int, *attacks: Attack) -> None:
+    def __init__(self, id: int, name: str, type: str, hp: int) -> None:
         self.id = id
         self.name = name
         self.type = type
         self.hp = hp
-        self.attacks = attacks
 
     def __str__(self) -> str:
         return f"{self.name}"
