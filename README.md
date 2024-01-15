@@ -8,10 +8,8 @@
 
 ## 📚 Módulo 04 - HTML e CSS 📚
 
-## 📚 Módulo 04 - HTML e CSS 📚
-
 ## 📚 Módulo 05 - JavaScript com jQuery 📚
 
 ## 📚 Módulo 06 - Banco de dados relacional 📚
 
-## 📚 Módulo 06 - Programação orientada à objetos 📚
+## 📚 Módulo 07 - Programação orientada à objetos 📚
