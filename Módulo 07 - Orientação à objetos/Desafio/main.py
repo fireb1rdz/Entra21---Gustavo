@@ -1,6 +1,4 @@
 from pokemon import Pokemon
-from attack import Attack
-from damage_calculator import DamageCalculator
 from battle import Battle
 from random import randint
 from round_manager import Round
@@ -24,7 +22,7 @@ if __name__ == "__main__":
             user_pokemon (Pokemon): The user's pokemon.
             battle (Battle): The battle instance.
         """
-        print(f"User turn - {user_pokemon}")
+        print(f"User turn - {user_pokemon}\n")
         user_attacks = pokemon_attack_repository.get_attacks_by_pokemon_id(user_pokemon) # Getting the attacks of user's pokemon
         for index, attack in enumerate(user_attacks): # Iterating in the attacks
             print(f"{index + 1}) {attack}") # Printing index + attack
@@ -56,7 +54,7 @@ if __name__ == "__main__":
             print(f"""{Pokemon.id}) {Pokemon.name}""") # Printing the pokemons in the database
         user_choice = int(input("Choose your Pokemon: ")) # Asking the user to choose a pokemon
         user_pokemon = pokemons[user_choice - 1] # Defines the user's pokemon
-        print(f"You chose {user_pokemon}!")
+        print(f"\nYou chose {user_pokemon}!")
         machine_pokemon = pokemons[randint(0, len(pokemons) - 1)]  # Randomly defines the machine's pokemon
         while user_pokemon == machine_pokemon: # If machine chose the same as the user, changes
             machine_pokemon = pokemons[randint(0, len(pokemons) - 1)]
