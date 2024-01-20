@@ -5,6 +5,8 @@ from round_manager import Round
 from pokemon_repository import PokemonRepository
 from attack_repository import AttackRepository
 from pokemon_attack_repository import PokemonAttackRepository
+from register_repository import RegisterRepository
+from datetime import datetime as dt
 
 if __name__ == "__main__":
     round = Round() # Creating the Round instance
@@ -13,6 +15,7 @@ if __name__ == "__main__":
     attack_repository = AttackRepository("db.db") # Creating the attack repository
     attacks = attack_repository.get_attacks() # Getting all attacks from the database
     pokemon_attack_repository = PokemonAttackRepository("db.db") # Creating the pokemon x attack repository
+    register_repository = RegisterRepository("db.db")
 
 
     def user_attack_choice(user_pokemon: Pokemon, battle: Battle):
@@ -63,10 +66,14 @@ if __name__ == "__main__":
         while True: # While there is no winner, continues
             winner = battle.battle_end() # Verifing if there is any winner
             if winner: # If there is a winner, makes the conditionals
+                today = str(dt.now())
+                today = today[0:19]
                 if winner == user_pokemon:
                     print(f"{machine_pokemon} was defeated. {user_pokemon} won!")
+                    register_repository.insert_register(user_pokemon, machine_pokemon, today)
                 else:
                     print(f"{user_pokemon} was defeated. {machine_pokemon} won!")
+                    register_repository.insert_register(machine_pokemon, user_pokemon, today)
                 return
 
             if round.round % 2 == 0: # Defines whose turn it is
